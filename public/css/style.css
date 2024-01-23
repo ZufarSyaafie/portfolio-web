@@ -776,16 +776,6 @@ body {
   transition-duration: 150ms;
 }
 
-.selection\:bg-lime-500 *::-moz-selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(132 204 22 / var(--tw-bg-opacity));
-}
-
-.selection\:bg-lime-500 *::selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(132 204 22 / var(--tw-bg-opacity));
-}
-
 .selection\:bg-sky-500 *::-moz-selection {
   --tw-bg-opacity: 1;
   background-color: rgb(14 165 233 / var(--tw-bg-opacity));
@@ -794,16 +784,6 @@ body {
 .selection\:bg-sky-500 *::selection {
   --tw-bg-opacity: 1;
   background-color: rgb(14 165 233 / var(--tw-bg-opacity));
-}
-
-.selection\:text-lime-100 *::-moz-selection {
-  --tw-text-opacity: 1;
-  color: rgb(236 252 203 / var(--tw-text-opacity));
-}
-
-.selection\:text-lime-100 *::selection {
-  --tw-text-opacity: 1;
-  color: rgb(236 252 203 / var(--tw-text-opacity));
 }
 
 .selection\:text-slate-100 *::-moz-selection {
@@ -816,16 +796,6 @@ body {
   color: rgb(241 245 249 / var(--tw-text-opacity));
 }
 
-.selection\:bg-lime-500::-moz-selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(132 204 22 / var(--tw-bg-opacity));
-}
-
-.selection\:bg-lime-500::selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(132 204 22 / var(--tw-bg-opacity));
-}
-
 .selection\:bg-sky-500::-moz-selection {
   --tw-bg-opacity: 1;
   background-color: rgb(14 165 233 / var(--tw-bg-opacity));
@@ -834,16 +804,6 @@ body {
 .selection\:bg-sky-500::selection {
   --tw-bg-opacity: 1;
   background-color: rgb(14 165 233 / var(--tw-bg-opacity));
-}
-
-.selection\:text-lime-100::-moz-selection {
-  --tw-text-opacity: 1;
-  color: rgb(236 252 203 / var(--tw-text-opacity));
-}
-
-.selection\:text-lime-100::selection {
-  --tw-text-opacity: 1;
-  color: rgb(236 252 203 / var(--tw-text-opacity));
 }
 
 .selection\:text-slate-100::-moz-selection {
