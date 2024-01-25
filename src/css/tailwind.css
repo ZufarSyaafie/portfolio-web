@@ -2,17 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    html{
+@layer base {
+    html {
         font-family: 'Inter', sans-serif;
     }
-    body{
-       @apply bg-white;
+
+    body {
+        @apply bg-[#F2F8FC];
     }
 }
 
-@layer components{
-    .icons{
+@layer components {
+    .icons {
         @apply inline-block p-2 border-2 rounded-full text-slate-600 hover:text-slate-100 hover:bg-lime-500 hover:border-lime-500 hover:shadow-lg transition-all;
     }
+
+    .container-padding {
+        @apply px-3 mx-auto sm:px-4 lg:px-6 xl:px-8;
+    }
+
+    .hamburger-line{
+        @apply bg-lime-500 h-[3px] w-[26px] block transition-all duration-300;
+    }
+
+    .blur-components {
+        /* From https://css.glass */
+        @apply bg-[rgb(242,248,252,.7)];
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+    }
+}
+
+.hamburger-active > span:nth-child(1) {
+    @apply rotate-45 origin-top-left;
+}
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+    transform-origin: 100% 50%;
+}
+.hamburger-active > span:nth-child(3) {
+    @apply -rotate-45 origin-bottom-left;
+}
+
+.nav-active{
+    @apply opacity-100 translate-y-0;
+}
+
+.layer-active{
+    @apply bottom-0 opacity-50;
 }

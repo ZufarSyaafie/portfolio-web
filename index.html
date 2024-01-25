@@ -9,14 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="public/css/style.css">
-    <title>My Portofolio Website</title>
+    <title>My Portfolio Website</title>
 </head>
 
 <body class="selection:bg-sky-500 selection:text-slate-100">
     <!-- Hero Section Start Here -->
-    <section class="overflow-x-hidden pt-16 sm:pt-24 lg:pt-24 xl:pt-28">
-        <div class="container px-3 mx-auto
-                    sm:px-4 lg:px-6 xl:px-8 ">
+    <section class="overflow-x-hidden pt-24 xl:pt-28">
+        <div class="container container-padding">
             <div class="flex flex-wrap justify-center items-center size-full gap-20 lg:justify-between">
                 <div class="lg:basis-1/2">
                     <h3 class="text-base font-semibold text-lime-500 mb-2
@@ -66,9 +65,8 @@
     <!-- Hero Section End Here -->
 
     <!-- About Section Start Here -->
-    <section class="">
-        <div class="container px-3 mx-auto mb-5
-        sm:px-4 lg:px-6 xl:px-8 ">
+    <section>
+        <div class="container container-padding mb-5">
             <div class="flex flex-wrap gap-5 pt-14 md:gap-0 md:justify-between">
                 <div class="md:w-3/5">
                     <h3 class="text-base font-bold text-lime-500 mb-1 uppercase
@@ -139,6 +137,69 @@
         </div>
     </section>
     <!-- About Section End Here -->
+
+    <!-- Header Section Start Here -->
+    <section class="py-2 fixed top-0 right-0 left-0 border-b border-solid border-slate-200 z-10">
+        <div id="box-nav" class="absolute top-0 z-10  size-full blur-components"></div>
+        <div class="container container-padding h-12 flex items-center justify-between relative z-20">
+            <div>
+                <a href="" class="text-lime-500 text-xl font-black tracking-wider">zufarsyaafi</a>
+            </div>
+            <div id="hamburger" class="h-5 w-[26px] flex flex-wrap content-between cursor-pointer lg:hidden">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+            <nav class="py-4 bg-[#F2F8FC] transition-all duration-300 w-1/2 hidden lg:block">
+                <ul class="flex items-center w-full font-medium text-base text-slate-500 justify-between">
+                    <li>
+                        <a class="hover:text-lime-500" href="">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-lime-500" href="">About Me</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-lime-500" href="">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-lime-500" href="">Clients</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-lime-500" href="">Blog</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-lime-500" href="">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <nav id="nav" class="py-4 bg-[rgb(242,248,252)] absolute top-full right-0 -translate-y-96 left-0 rounded-b-xl shadow-lg transition-all duration-300 opacity-0 z-[1]">
+            <ul class="flex flex-col items-center justify-around h-60 font-medium text-lg text-slate-500">
+                <li>
+                    <a class="hover:text-lime-500" href="">Home</a>
+                </li>
+                <li>
+                    <a class="hover:text-lime-500" href="">About Me</a>
+                </li>
+                <li>
+                    <a class="hover:text-lime-500" href="">Portfolio</a>
+                </li>
+                <li>
+                    <a class="hover:text-lime-500" href="">Clients</a>
+                </li>
+                <li>
+                    <a class="hover:text-lime-500" href="">Blog</a>
+                </li>
+                <li>
+                    <a class="hover:text-lime-500" href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <div id="layer" class="fixed bg-black top-0 left-0 right-0 origin-top opacity-0 transition-all duration-300"></div>
+    <!-- Header Section End Here -->
+
+    <script src="public/js/script.js"></script>
 </body>
 
 </html>
