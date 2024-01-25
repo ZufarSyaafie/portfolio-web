@@ -1174,6 +1174,11 @@ body {
       font-size: 1.125rem;
       line-height: 1.75rem;
     }
+
+    .sm\:max-md\:text-xl {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
   }
 }
 
@@ -1212,6 +1217,14 @@ body {
 
   .md\:pt-8 {
     padding-top: 2rem;
+  }
+
+  .md\:pt-7 {
+    padding-top: 1.75rem;
+  }
+
+  .md\:pt-9 {
+    padding-top: 2.25rem;
   }
 
   .md\:text-2xl {
@@ -1268,6 +1281,10 @@ body {
     padding-top: 2.5rem;
   }
 
+  .lg\:pt-12 {
+    padding-top: 3rem;
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1280,6 +1297,11 @@ body {
 
   .lg\:text-lg {
     font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
@@ -1303,6 +1325,10 @@ body {
 
   .xl\:mb-9 {
     margin-bottom: 2.25rem;
+  }
+
+  .xl\:mb-1 {
+    margin-bottom: 0.25rem;
   }
 
   .xl\:inline-block {
@@ -1331,6 +1357,10 @@ body {
 
   .xl\:pt-28 {
     padding-top: 7rem;
+  }
+
+  .xl\:pt-12 {
+    padding-top: 3rem;
   }
 
   .xl\:text-2xl {
