@@ -934,6 +934,11 @@ body {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
+.bg-background {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 248 252 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'https\:\/\/source\.unsplash\.com\/random\/\?Programming\&1\'\)\] {
   background-image: url('https://source.unsplash.com/random/?Programming&1');
 }
