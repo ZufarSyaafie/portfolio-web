@@ -8,5 +8,5 @@ hamburger.addEventListener('click', function(){
     hamburger.classList.toggle('hamburger-active');
     nav.classList.toggle('nav-active');
     layer.classList.toggle('layer-active');
-    boxNav.classList.toggle('bg-[#F2F8FC]');
+    boxNav.classList.toggle('bg-background');
 });
