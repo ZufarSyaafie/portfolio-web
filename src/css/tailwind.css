@@ -14,19 +14,19 @@
 
 @layer components {
 	.icons {
-		@apply inline-block p-2 border-2 rounded-full text-slate-600 hover:text-slate-100 hover:bg-lime-500 hover:border-lime-500 hover:shadow-lg transition-all;
+		@apply inline-block rounded-full border-2 p-2 text-slate-600 transition-all hover:border-lime-500 hover:bg-lime-500 hover:text-slate-100 hover:shadow-lg;
 	}
 
 	.container-padding {
-		@apply px-3 mx-auto sm:px-4 lg:px-6 xl:px-8;
+		@apply mx-auto px-3 sm:px-4 lg:px-6 xl:px-8;
 	}
 
 	.hamburger-line {
-		@apply bg-slate-600 h-[3px] w-[26px] block rounded-full transition-all duration-300 ease-in-out;
+		@apply block h-[3px] w-[26px] rounded-full bg-slate-600 transition-all duration-300 ease-in-out;
 	}
 
 	.card {
-		@apply cursor-pointer bg-[#F2F8FC] rounded-xl overflow-hidden h-64 w-96 shadow-lg hover:bg-lime-500 hover:shadow-xl transition-all duration-300;
+		@apply h-64 w-96 cursor-pointer overflow-hidden rounded-xl bg-[#F2F8FC] shadow-lg transition-all duration-300 hover:bg-lime-500 hover:shadow-xl md:w-72 xl:w-80;
 	}
 
 	.blur-components {
@@ -37,18 +37,18 @@
 }
 
 .hamburger-active > span:nth-child(1) {
-	@apply rotate-45 origin-top-left;
+	@apply origin-top-left rotate-45;
 }
 .hamburger-active > span:nth-child(2) {
 	@apply scale-0;
 	transform-origin: 100% 50%;
 }
 .hamburger-active > span:nth-child(3) {
-	@apply -rotate-45 origin-bottom-left;
+	@apply origin-bottom-left -rotate-45;
 }
 
 .nav-active {
-	@apply opacity-100 translate-y-0;
+	@apply translate-y-0 opacity-100;
 }
 
 .layer-active {
