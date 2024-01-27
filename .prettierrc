@@ -1,3 +1,4 @@
 {
-  "useTabs": true
+	"plugins": ["prettier-plugin-tailwindcss"],
+	"useTabs": true
 }
