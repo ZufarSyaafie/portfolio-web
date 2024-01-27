@@ -3,54 +3,54 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-        font-family: 'Inter', sans-serif;
-    }
+	html {
+		font-family: "Inter", sans-serif;
+	}
 
-    body {
-        @apply bg-background;
-    }
+	body {
+		@apply bg-background;
+	}
 }
 
 @layer components {
-    .icons {
-        @apply inline-block p-2 border-2 rounded-full text-slate-600 hover:text-slate-100 hover:bg-lime-500 hover:border-lime-500 hover:shadow-lg transition-all;
-    }
+	.icons {
+		@apply inline-block p-2 border-2 rounded-full text-slate-600 hover:text-slate-100 hover:bg-lime-500 hover:border-lime-500 hover:shadow-lg transition-all;
+	}
 
-    .container-padding {
-        @apply px-3 mx-auto sm:px-4 lg:px-6 xl:px-8;
-    }
+	.container-padding {
+		@apply px-3 mx-auto sm:px-4 lg:px-6 xl:px-8;
+	}
 
-    .hamburger-line{
-        @apply bg-slate-600 h-[3px] w-[26px] block rounded-full transition-all duration-300 ease-in-out;
-    }
+	.hamburger-line {
+		@apply bg-slate-600 h-[3px] w-[26px] block rounded-full transition-all duration-300 ease-in-out;
+	}
 
-    .card{
-        @apply cursor-pointer bg-[#F2F8FC] rounded-xl overflow-hidden h-64 w-96 shadow-lg hover:bg-lime-500 hover:shadow-xl transition-all duration-300;
-    }
+	.card {
+		@apply cursor-pointer bg-[#F2F8FC] rounded-xl overflow-hidden h-64 w-96 shadow-lg hover:bg-lime-500 hover:shadow-xl transition-all duration-300;
+	}
 
-    .blur-components {
-        @apply bg-[rgb(242,248,252,.7)];
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-    }
+	.blur-components {
+		@apply bg-[rgb(242,248,252,.7)];
+		backdrop-filter: blur(20px);
+		-webkit-backdrop-filter: blur(20px);
+	}
 }
 
 .hamburger-active > span:nth-child(1) {
-    @apply rotate-45 origin-top-left;
+	@apply rotate-45 origin-top-left;
 }
 .hamburger-active > span:nth-child(2) {
-    @apply scale-0;
-    transform-origin: 100% 50%;
+	@apply scale-0;
+	transform-origin: 100% 50%;
 }
 .hamburger-active > span:nth-child(3) {
-    @apply -rotate-45 origin-bottom-left;
+	@apply -rotate-45 origin-bottom-left;
 }
 
-.nav-active{
-    @apply opacity-100 translate-y-0;
+.nav-active {
+	@apply opacity-100 translate-y-0;
 }
 
-.layer-active{
-    @apply bottom-0 opacity-50;
+.layer-active {
+	@apply bottom-0 opacity-50;
 }
