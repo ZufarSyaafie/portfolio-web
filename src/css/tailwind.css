@@ -26,13 +26,17 @@
 	}
 
 	.card {
-		@apply h-64 w-96 cursor-pointer overflow-hidden rounded-xl bg-[#F2F8FC] shadow-lg transition-all duration-300 hover:bg-lime-500 hover:shadow-xl md:w-72 xl:w-80;
+		@apply h-64 w-96 cursor-pointer overflow-hidden rounded-xl bg-[#F2F8FC] shadow-lg transition-all duration-300 hover:scale-105 hover:bg-lime-500 hover:shadow-xl md:w-72 xl:w-80;
 	}
 
 	.blur-components {
 		@apply bg-[rgb(242,248,252,.7)];
 		backdrop-filter: blur(20px);
 		-webkit-backdrop-filter: blur(20px);
+	}
+
+	.clients {
+		@apply block h-36 w-36 text-center brightness-50 saturate-0 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-100 hover:saturate-100 xl:h-48 xl:w-48;
 	}
 }
 
