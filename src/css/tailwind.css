@@ -36,7 +36,11 @@
 	}
 
 	.clients {
-		@apply block h-36 w-36 text-center brightness-50 saturate-0 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-100 hover:saturate-100 xl:h-48 xl:w-48;
+		@apply block h-36 w-36 text-center brightness-50 drop-shadow-xl saturate-50 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-100 hover:saturate-100 xl:h-48 xl:w-48;
+	}
+
+	.project-img {
+		@apply mx-auto transition-all duration-300 group-hover:scale-125;
 	}
 }
 
@@ -44,8 +48,7 @@
 	@apply origin-top-left rotate-45;
 }
 .hamburger-active > span:nth-child(2) {
-	@apply scale-0;
-	transform-origin: 100% 50%;
+	@apply rotate-180 scale-0;
 }
 .hamburger-active > span:nth-child(3) {
 	@apply origin-bottom-left -rotate-45;

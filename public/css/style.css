@@ -695,7 +695,8 @@ body {
   width: 9rem;
   text-align: center;
   --tw-brightness: brightness(.5);
-  --tw-saturate: saturate(0);
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  --tw-saturate: saturate(.5);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   transition-property: all;
   transition-duration: 300ms;
@@ -716,6 +717,20 @@ body {
     height: 12rem;
     width: 12rem;
   }
+}
+
+.project-img {
+  margin-left: auto;
+  margin-right: auto;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.group:hover .project-img {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .fixed {
@@ -941,8 +956,16 @@ body {
   row-gap: 1.75rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded-full {
@@ -982,6 +1005,16 @@ body {
   background-color: rgb(132 204 22 / var(--tw-bg-opacity));
 }
 
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
+.bg-slate-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
 .bg-slate-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
@@ -992,20 +1025,8 @@ body {
   background-color: rgb(242 248 252 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'https\:\/\/source\.unsplash\.com\/random\/\?Programming\&1\'\)\] {
-  background-image: url('https://source.unsplash.com/random/?Programming&1');
-}
-
-.bg-\[url\(\'https\:\/\/source\.unsplash\.com\/random\/\?Programming\&2\'\)\] {
-  background-image: url('https://source.unsplash.com/random/?Programming&2');
-}
-
-.bg-\[url\(\'https\:\/\/source\.unsplash\.com\/random\/\?Programming\&3\'\)\] {
-  background-image: url('https://source.unsplash.com/random/?Programming&3');
-}
-
-.bg-\[url\(\'https\:\/\/source\.unsplash\.com\/random\/\?Programming\&4\'\)\] {
-  background-image: url('https://source.unsplash.com/random/?Programming&4');
+.bg-\[url\(\'\/web5\/img\/navbar\.png\'\)\] {
+  background-image: url('/web5/img/navbar.png');
 }
 
 .bg-\[url\(\'https\:\/\/source\.unsplash\.com\/random\/\?Programming\&5\'\)\] {
@@ -1014,6 +1035,14 @@ body {
 
 .bg-\[url\(\'https\:\/\/source\.unsplash\.com\/random\/\?Programming\&6\'\)\] {
   background-image: url('https://source.unsplash.com/random/?Programming&6');
+}
+
+.bg-\[url\(\'\/web5\/img\/ku-4\.png\'\)\] {
+  background-image: url('/web5/img/ku-4.png');
+}
+
+.bg-\[url\(\'\/web5\/img\/ig-feed\.jpg\'\)\] {
+  background-image: url('/web5/img/ig-feed.jpg');
 }
 
 .bg-cover {
@@ -1130,11 +1159,6 @@ body {
   letter-spacing: 0.05em;
 }
 
-.text-background {
-  --tw-text-opacity: 1;
-  color: rgb(242 248 252 / var(--tw-text-opacity));
-}
-
 .text-lime-500 {
   --tw-text-opacity: 1;
   color: rgb(132 204 22 / var(--tw-text-opacity));
@@ -1174,6 +1198,10 @@ body {
   opacity: 0;
 }
 
+.bg-blend-darken {
+  background-blend-mode: darken;
+}
+
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -1201,10 +1229,10 @@ body {
 }
 
 .hamburger-active > span:nth-child(2) {
+  --tw-rotate: 180deg;
   --tw-scale-x: 0;
   --tw-scale-y: 0;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  transform-origin: 100% 50%;
 }
 
 .hamburger-active > span:nth-child(3) {

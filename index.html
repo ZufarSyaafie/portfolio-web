@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
 
 	<body class="selection:bg-sky-500 selection:text-slate-100">
 		<!-- Hero Section Start Here -->
-		<section class="overflow-x-hidden pt-24 xl:pt-28">
+		<section class="overflow-x-hidden pt-24 xl:pt-28" id="Home">
 			<div class="container-padding container">
 				<div
 					class="flex size-full flex-wrap items-center justify-center gap-20 lg:justify-between"
@@ -91,7 +91,7 @@
 		<!-- Hero Section End Here -->
 
 		<!-- About Section Start Here -->
-		<section>
+		<section id="About">
 			<div class="container-padding container mb-14">
 				<div class="flex flex-wrap gap-5 pt-14 md:justify-between md:gap-0">
 					<div class="md:w-3/5">
@@ -256,22 +256,19 @@
 						class="flex w-full items-center justify-between text-base font-medium text-slate-500"
 					>
 						<li>
-							<a class="hover:text-lime-500" href="">Home</a>
+							<a class="hover:text-lime-500" href="#Home">Home</a>
 						</li>
 						<li>
-							<a class="hover:text-lime-500" href="">About Me</a>
+							<a class="hover:text-lime-500" href="#About">About Me</a>
 						</li>
 						<li>
-							<a class="hover:text-lime-500" href="">Portfolio</a>
+							<a class="hover:text-lime-500" href="#Portfolio">Portfolio</a>
 						</li>
 						<li>
-							<a class="hover:text-lime-500" href="">Clients</a>
+							<a class="hover:text-lime-500" href="#Clients">Clients</a>
 						</li>
 						<li>
-							<a class="hover:text-lime-500" href="">Blog</a>
-						</li>
-						<li>
-							<a class="hover:text-lime-500" href="">Contact</a>
+							<a class="hover:text-lime-500" href="#Blog">Blog</a>
 						</li>
 					</ul>
 				</nav>
@@ -284,22 +281,19 @@
 					class="flex h-60 flex-col items-center justify-around text-lg font-medium text-slate-500"
 				>
 					<li>
-						<a class="hover:text-lime-500" href="">Home</a>
+						<a class="hover:text-lime-500" href="#Home">Home</a>
 					</li>
 					<li>
-						<a class="hover:text-lime-500" href="">About Me</a>
+						<a class="hover:text-lime-500" href="#About">About Me</a>
 					</li>
 					<li>
-						<a class="hover:text-lime-500" href="">Portfolio</a>
+						<a class="hover:text-lime-500" href="#Portfolio">Portfolio</a>
 					</li>
 					<li>
-						<a class="hover:text-lime-500" href="">Clients</a>
+						<a class="hover:text-lime-500" href="#Client">Clients</a>
 					</li>
 					<li>
-						<a class="hover:text-lime-500" href="">Blog</a>
-					</li>
-					<li>
-						<a class="hover:text-lime-500" href="">Contact</a>
+						<a class="hover:text-lime-500" href="#Blog">Blog</a>
 					</li>
 				</ul>
 			</nav>
@@ -311,7 +305,7 @@
 		<!-- Header Section End Here -->
 
 		<!-- Portfolio Section Start Here -->
-		<section class="bg-slate-800">
+		<section class="bg-slate-200" id="Portfolio">
 			<div class="container-padding container pb-7 pt-14">
 				<div class="mb-7 text-center xl:mb-10">
 					<h3
@@ -320,89 +314,138 @@
 						Portfolio
 					</h3>
 					<h1
-						class="mb-3 text-2xl font-extrabold tracking-wider text-background sm:text-3xl xl:mb-4 xl:text-4xl"
+						class="mb-3 text-2xl font-extrabold tracking-wider text-slate-700 sm:text-3xl xl:mb-4 xl:text-4xl"
 					>
 						My Latest Projects
 					</h1>
 					<p
 						class="mx-auto text-base font-medium text-slate-500 sm:text-lg xl:text-xl xl:leading-8"
 					>
-						These are some of my latest projects related to design and
-						programming. Please feel free to check them out!
+						Showcasing creativity in captivating designs and innovative
+						technological solutions. My portfolio reflects dedication to
+						delivering exceptional visual and functional experiences.
 					</p>
 				</div>
 				<div class="flex w-full flex-wrap justify-center gap-6">
 					<div class="card group">
-						<div
-							class="h-3/4 bg-[url('https://source.unsplash.com/random/?Programming&1')] bg-cover transition-all duration-300 group-hover:brightness-75"
-						></div>
-						<div class="flex h-1/4 items-center justify-center">
-							<h2
-								class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+						<a
+							href="https://www.instagram.com/event.muslimteknik/"
+							target="_blank"
+						>
+							<div
+								class="h-3/4 overflow-hidden bg-slate-800 transition-all duration-300 group-hover:brightness-75"
 							>
-								Project's Tittle
-							</h2>
-						</div>
+								<img
+									src="img/event-muslim-teknik.png"
+									alt=""
+									class="project-img h-full"
+								/>
+							</div>
+							<div class="flex h-1/4 items-center justify-center">
+								<h2
+									class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+								>
+									PERNIK 1445 H
+								</h2>
+							</div>
+						</a>
 					</div>
 					<div class="card group">
-						<div
-							class="h-3/4 bg-[url('https://source.unsplash.com/random/?Programming&2')] bg-cover transition-all duration-300 group-hover:brightness-75"
-						></div>
-						<div class="flex h-1/4 items-center justify-center">
-							<h2
-								class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+						<a href="https://www.instagram.com/kpu.kmteti/" target="_blank">
+							<div
+								class="flex h-3/4 overflow-hidden bg-slate-800 transition-all duration-300 group-hover:brightness-75"
 							>
-								Project's Tittle
-							</h2>
-						</div>
+								<img
+									src="img/kpu-kmteti.svg"
+									alt=""
+									class="project-img w-full"
+								/>
+							</div>
+							<div class="flex h-1/4 items-center justify-center">
+								<h2
+									class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+								>
+									KPU - KMTETI
+								</h2>
+							</div>
+						</a>
 					</div>
 					<div class="card group">
-						<div
-							class="h-3/4 bg-[url('https://source.unsplash.com/random/?Programming&3')] bg-cover transition-all duration-300 group-hover:brightness-75"
-						></div>
-						<div class="flex h-1/4 items-center justify-center">
-							<h2
-								class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+						<a href="https://zufarsyaafie.github.io/navbar/" target="_blank">
+							<div
+								class="h-3/4 overflow-hidden bg-slate-700 transition-all duration-300 group-hover:brightness-75"
 							>
-								Project's Tittle
-							</h2>
-						</div>
+								<img src="img/navbar.png" alt="" class="project-img w-full" />
+							</div>
+							<div class="flex h-1/4 items-center justify-center">
+								<h2
+									class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+								>
+									Navigation Bar
+								</h2>
+							</div>
+						</a>
 					</div>
 					<div class="card group">
-						<div
-							class="h-3/4 bg-[url('https://source.unsplash.com/random/?Programming&4')] bg-cover transition-all duration-300 group-hover:brightness-75"
-						></div>
-						<div class="flex h-1/4 items-center justify-center">
-							<h2
-								class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+						<a
+							href="https://drive.google.com/drive/folders/1RX_dHv4WwFsNb2iiy7FLIEYVF6cAKZ3U?usp=drive_link"
+							target="_blank"
+						>
+							<div
+								class="h-3/4 overflow-hidden bg-slate-700 transition-all duration-300 group-hover:brightness-75"
 							>
-								Project's Tittle
-							</h2>
-						</div>
+								<img src="img/ku-4.png" alt="" class="project-img w-full" />
+							</div>
+							<div class="flex h-1/4 items-center justify-center">
+								<h2
+									class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+								>
+									Event Posters
+								</h2>
+							</div>
+						</a>
 					</div>
 					<div class="card group">
-						<div
-							class="h-3/4 bg-[url('https://source.unsplash.com/random/?Programming&5')] bg-cover transition-all duration-300 group-hover:brightness-75"
-						></div>
-						<div class="flex h-1/4 items-center justify-center">
-							<h2
-								class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+						<a
+							href="https://drive.google.com/drive/folders/1RSwjqSwc0-bClkSZN4rlGA1RiEmLmRFE?usp=drive_link"
+							target="_blank"
+						>
+							<div
+								class="h-3/4 overflow-hidden transition-all duration-300 group-hover:brightness-75"
 							>
-								Project's Tittle
-							</h2>
-						</div>
+								<img src="img/ig-feed.jpg" alt="" class="project-img w-full" />
+							</div>
+							<div class="flex h-1/4 items-center justify-center">
+								<h2
+									class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+								>
+									Instagram Feeds
+								</h2>
+							</div>
+						</a>
 					</div>
 					<div class="card group">
-						<div
-							class="h-3/4 bg-[url('https://source.unsplash.com/random/?Programming&6')] bg-cover transition-all duration-300 group-hover:brightness-75"
-						></div>
-						<div class="flex h-1/4 items-center justify-center">
-							<h2
-								class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+						<a
+							href="https://drive.google.com/drive/folders/1RR6okKeVsisyuh55c7cmIVH6C-k1H3zR?usp=drive_link"
+							target="_blank"
+						>
+							<div
+								class="h-3/4 overflow-hidden transition-all duration-300 group-hover:brightness-75"
 							>
-								Project's Tittle
-							</h2>
-						</div>
+								<img
+									src="img/ig-stories.jpg"
+									alt=""
+									class="project-img w-full"
+								/>
+							</div>
+							<div class="flex h-1/4 items-center justify-center">
+								<h2
+									class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+								>
+									Instagram Stories
+								</h2>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -410,7 +453,7 @@
 		<!-- Portfolio Section End Here -->
 
 		<!-- Clients Section Start Here -->
-		<section class="bg-slate-800">
+		<section class="bg-slate-200" id="Clients">
 			<div class="container-padding container pb-14 pt-7">
 				<div class="mb-7 text-center xl:mb-10">
 					<h3
@@ -419,15 +462,16 @@
 						Clients
 					</h3>
 					<h1
-						class="mb-3 text-2xl font-extrabold tracking-wider text-background sm:text-3xl xl:mb-4 xl:text-4xl"
+						class="mb-3 text-2xl font-extrabold tracking-wider text-slate-700 sm:text-3xl xl:mb-4 xl:text-4xl"
 					>
 						Meet My Clients
 					</h1>
 					<p
 						class="mx-auto text-base font-medium text-slate-500 sm:text-lg xl:text-xl xl:leading-8"
 					>
-						Here are some of the clients I've worked with. Don't forget to find
-						out about them here!
+						Grateful for collaborations with diverse clients, turning visions
+						into reality. Each project represents a unique journey of creativity
+						and success.
 					</p>
 				</div>
 				<div
