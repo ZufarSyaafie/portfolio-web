@@ -448,11 +448,6 @@ html {
   font-family: "Inter", sans-serif;
 }
 
-body {
-  --tw-bg-opacity: 1;
-  background-color: rgb(242 248 252 / var(--tw-bg-opacity));
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -908,6 +903,10 @@ body {
   cursor: pointer;
 }
 
+.scroll-p-10 {
+  scroll-padding: 2.5rem;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -995,6 +994,11 @@ body {
   background-color: rgb(242 248 252 / var(--tw-bg-opacity));
 }
 
+.bg-background {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 248 252 / var(--tw-bg-opacity));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -1018,35 +1022,6 @@ body {
 .bg-slate-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
-
-.bg-background {
-  --tw-bg-opacity: 1;
-  background-color: rgb(242 248 252 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\'\/web5\/img\/navbar\.png\'\)\] {
-  background-image: url('/web5/img/navbar.png');
-}
-
-.bg-\[url\(\'https\:\/\/source\.unsplash\.com\/random\/\?Programming\&5\'\)\] {
-  background-image: url('https://source.unsplash.com/random/?Programming&5');
-}
-
-.bg-\[url\(\'https\:\/\/source\.unsplash\.com\/random\/\?Programming\&6\'\)\] {
-  background-image: url('https://source.unsplash.com/random/?Programming&6');
-}
-
-.bg-\[url\(\'\/web5\/img\/ku-4\.png\'\)\] {
-  background-image: url('/web5/img/ku-4.png');
-}
-
-.bg-\[url\(\'\/web5\/img\/ig-feed\.jpg\'\)\] {
-  background-image: url('/web5/img/ig-feed.jpg');
-}
-
-.bg-cover {
-  background-size: cover;
 }
 
 .fill-current {
@@ -1198,10 +1173,6 @@ body {
   opacity: 0;
 }
 
-.bg-blend-darken {
-  background-blend-mode: darken;
-}
-
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -1216,6 +1187,10 @@ body {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .ease-in-out {
