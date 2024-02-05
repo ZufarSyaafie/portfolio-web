@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script>
+			document.documentElement.classList.add("js");
+		</script>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -20,7 +23,10 @@
 				<div
 					class="flex size-full flex-wrap items-center justify-center gap-20 lg:justify-between"
 				>
-					<div class="lg:basis-1/2">
+					<div
+						class="taos:translate-x-[-200px] taos:opacity-0 delay-[300ms] duration-[1000ms] lg:basis-1/2"
+						data-taos-offset="150"
+					>
 						<h3
 							class="mb-2 text-base font-semibold text-lime-500 sm:text-lg md:text-xl xl:text-2xl"
 						>
@@ -52,7 +58,10 @@
 							</button>
 						</a>
 					</div>
-					<div>
+					<div
+						class="taos:scale-[0.6] taos:opacity-0 delay-[300ms] duration-[1000ms]"
+						data-taos-offset="150"
+					>
 						<div class="relative">
 							<img
 								src="img/hero-sm.png"
@@ -94,7 +103,10 @@
 		<section id="About">
 			<div class="container-padding container mb-14">
 				<div class="flex flex-wrap gap-5 pt-14 md:justify-between md:gap-0">
-					<div class="md:w-3/5">
+					<div
+						class="taos:[transform:translate3d(-200px,0,0)_scale(0.6)] taos:opacity-0 delay-[300ms] duration-[1000ms] md:w-3/5"
+						data-taos-offset="150"
+					>
 						<h3
 							class="mb-1 text-lg font-bold uppercase tracking-wider text-lime-500 sm:max-md:text-xl lg:text-xl xl:text-2xl"
 						>
@@ -112,7 +124,10 @@
 							University. I love things related to design and technology.
 						</p>
 					</div>
-					<div class="md:w-[35%] md:pt-9 lg:pt-10 xl:pt-12">
+					<div
+						class="taos:[transform:translate3d(200px,0,0)_scale(0.6)] taos:opacity-0 delay-[300ms] duration-[1000ms] md:w-[35%] md:pt-9 lg:pt-10 xl:pt-12"
+						data-taos-offset="150"
+					>
 						<h2
 							class="mb-2 text-xl font-extrabold text-slate-700 sm:max-md:text-2xl md:mb-3 lg:text-2xl xl:mb-4 xl:text-3xl"
 						>
@@ -229,7 +244,8 @@
 
 		<!-- Header Section Start Here -->
 		<section
-			class="fixed left-0 right-0 top-0 z-10 border-b border-solid border-slate-200 py-2"
+			id="header"
+			class="fixed left-0 right-0 top-0 z-10 translate-y-0 border-b border-solid border-slate-200 py-2 transition-all duration-300"
 		>
 			<div
 				id="box-nav"
@@ -279,7 +295,7 @@
 			</div>
 			<nav
 				id="nav"
-				class="absolute left-0 right-0 top-full z-[1] -translate-y-96 rounded-b-xl bg-[rgb(242,248,252)] py-4 opacity-0 shadow-lg transition-all duration-500 ease-in-out"
+				class="absolute left-0 right-0 top-full z-[1] -translate-y-96 rounded-b-xl bg-background py-4 opacity-0 shadow-lg transition-all duration-500 ease-in-out"
 			>
 				<ul
 					class="flex h-60 flex-col items-center justify-around text-lg font-medium text-slate-500"
@@ -315,7 +331,10 @@
 		<!-- Portfolio Section Start Here -->
 		<section class="bg-slate-200" id="Portfolio">
 			<div class="container-padding container pb-7 pt-14">
-				<div class="mb-7 text-center xl:mb-10">
+				<div
+					class="taos:scale-[0.6] taos:opacity-0 mb-7 text-center delay-[300ms] duration-[1000ms] xl:mb-10"
+					data-taos-offset="100"
+				>
 					<h3
 						class="mb-1 text-lg font-bold uppercase tracking-wider text-lime-500 sm:text-xl xl:text-2xl"
 					>
@@ -327,7 +346,7 @@
 						My Latest Projects
 					</h1>
 					<p
-						class="mx-auto text-base font-medium text-slate-500 sm:text-lg xl:text-xl xl:leading-8"
+						class="mx-auto text-base font-medium text-slate-500 sm:text-lg xl:text-xl xl:leading-8 2xl:max-w-5xl"
 					>
 						Showcasing creativity in captivating designs and innovative
 						technological solutions. My portfolio reflects dedication to
@@ -335,125 +354,159 @@
 					</p>
 				</div>
 				<div class="flex w-full flex-wrap justify-center gap-6">
-					<div class="card group">
-						<a
-							href="https://www.instagram.com/event.muslimteknik/"
-							target="_blank"
-						>
-							<div
-								class="h-3/4 overflow-hidden bg-slate-800 transition-all duration-300 group-hover:brightness-75"
+					<div
+						class="taos:scale-[0.6] taos:opacity-0 delay-[300ms] duration-[1000ms]"
+						data-taos-offset="100"
+					>
+						<div class="card group">
+							<a
+								href="https://www.instagram.com/event.muslimteknik/"
+								target="_blank"
 							>
-								<img
-									src="img/event-muslim-teknik.png"
-									alt=""
-									class="project-img h-full"
-								/>
-							</div>
-							<div class="flex h-1/4 items-center justify-center">
-								<h2
-									class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+								<div
+									class="h-3/4 overflow-hidden bg-slate-800 transition-all duration-300 group-hover:brightness-75"
 								>
-									PERNIK 1445 H
-								</h2>
-							</div>
-						</a>
+									<img
+										src="img/event-muslim-teknik.png"
+										alt=""
+										class="project-img h-full"
+									/>
+								</div>
+								<div class="flex h-1/4 items-center justify-center">
+									<h2
+										class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+									>
+										PERNIK 1445 H
+									</h2>
+								</div>
+							</a>
+						</div>
 					</div>
-					<div class="card group">
-						<a href="https://www.instagram.com/kpu.kmteti/" target="_blank">
-							<div
-								class="flex h-3/4 overflow-hidden bg-slate-800 transition-all duration-300 group-hover:brightness-75"
-							>
-								<img
-									src="img/kpu-kmteti.svg"
-									alt=""
-									class="project-img w-full"
-								/>
-							</div>
-							<div class="flex h-1/4 items-center justify-center">
-								<h2
-									class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+					<div
+						class="taos:scale-[0.6] taos:opacity-0 delay-[300ms] duration-[1000ms]"
+						data-taos-offset="100"
+					>
+						<div class="card group">
+							<a href="https://www.instagram.com/kpu.kmteti/" target="_blank">
+								<div
+									class="flex h-3/4 overflow-hidden bg-slate-800 transition-all duration-300 group-hover:brightness-75"
 								>
-									KPU - KMTETI
-								</h2>
-							</div>
-						</a>
+									<img
+										src="img/kpu-kmteti.svg"
+										alt=""
+										class="project-img w-full"
+									/>
+								</div>
+								<div class="flex h-1/4 items-center justify-center">
+									<h2
+										class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+									>
+										KPU - KMTETI
+									</h2>
+								</div>
+							</a>
+						</div>
 					</div>
-					<div class="card group">
-						<a href="https://zufarsyaafie.github.io/navbar/" target="_blank">
-							<div
-								class="h-3/4 overflow-hidden bg-slate-700 transition-all duration-300 group-hover:brightness-75"
-							>
-								<img src="img/navbar.png" alt="" class="project-img w-full" />
-							</div>
-							<div class="flex h-1/4 items-center justify-center">
-								<h2
-									class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+					<div
+						class="taos:scale-[0.6] taos:opacity-0 delay-[300ms] duration-[1000ms]"
+						data-taos-offset="100"
+					>
+						<div class="card group">
+							<a href="https://zufarsyaafie.github.io/navbar/" target="_blank">
+								<div
+									class="h-3/4 overflow-hidden bg-slate-700 transition-all duration-300 group-hover:brightness-75"
 								>
-									Navigation Bar
-								</h2>
-							</div>
-						</a>
+									<img src="img/navbar.png" alt="" class="project-img w-full" />
+								</div>
+								<div class="flex h-1/4 items-center justify-center">
+									<h2
+										class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+									>
+										Navigation Bar
+									</h2>
+								</div>
+							</a>
+						</div>
 					</div>
-					<div class="card group">
-						<a
-							href="https://drive.google.com/drive/folders/1RX_dHv4WwFsNb2iiy7FLIEYVF6cAKZ3U?usp=drive_link"
-							target="_blank"
-						>
-							<div
-								class="h-3/4 overflow-hidden bg-slate-700 transition-all duration-300 group-hover:brightness-75"
+					<div
+						class="taos:scale-[0.6] taos:opacity-0 delay-[300ms] duration-[1000ms]"
+						data-taos-offset="100"
+					>
+						<div class="card group">
+							<a
+								href="https://drive.google.com/drive/folders/1RX_dHv4WwFsNb2iiy7FLIEYVF6cAKZ3U?usp=drive_link"
+								target="_blank"
 							>
-								<img src="img/ku-4.png" alt="" class="project-img w-full" />
-							</div>
-							<div class="flex h-1/4 items-center justify-center">
-								<h2
-									class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+								<div
+									class="h-3/4 overflow-hidden bg-slate-700 transition-all duration-300 group-hover:brightness-75"
 								>
-									Event Posters
-								</h2>
-							</div>
-						</a>
+									<img src="img/ku-4.png" alt="" class="project-img w-full" />
+								</div>
+								<div class="flex h-1/4 items-center justify-center">
+									<h2
+										class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+									>
+										Event Posters
+									</h2>
+								</div>
+							</a>
+						</div>
 					</div>
-					<div class="card group">
-						<a
-							href="https://drive.google.com/drive/folders/1RSwjqSwc0-bClkSZN4rlGA1RiEmLmRFE?usp=drive_link"
-							target="_blank"
-						>
-							<div
-								class="h-3/4 overflow-hidden transition-all duration-300 group-hover:brightness-75"
+					<div
+						class="taos:scale-[0.6] taos:opacity-0 delay-[300ms] duration-[1000ms]"
+						data-taos-offset="100"
+					>
+						<div class="card group">
+							<a
+								href="https://drive.google.com/drive/folders/1RSwjqSwc0-bClkSZN4rlGA1RiEmLmRFE?usp=drive_link"
+								target="_blank"
 							>
-								<img src="img/ig-feed.jpg" alt="" class="project-img w-full" />
-							</div>
-							<div class="flex h-1/4 items-center justify-center">
-								<h2
-									class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+								<div
+									class="h-3/4 overflow-hidden transition-all duration-300 group-hover:brightness-75"
 								>
-									Instagram Feeds
-								</h2>
-							</div>
-						</a>
+									<img
+										src="img/ig-feed.jpg"
+										alt=""
+										class="project-img w-full"
+									/>
+								</div>
+								<div class="flex h-1/4 items-center justify-center">
+									<h2
+										class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+									>
+										Instagram Feeds
+									</h2>
+								</div>
+							</a>
+						</div>
 					</div>
-					<div class="card group">
-						<a
-							href="https://drive.google.com/drive/folders/1RR6okKeVsisyuh55c7cmIVH6C-k1H3zR?usp=drive_link"
-							target="_blank"
-						>
-							<div
-								class="h-3/4 overflow-hidden transition-all duration-300 group-hover:brightness-75"
+					<div
+						class="taos:scale-[0.6] taos:opacity-0 delay-[300ms] duration-[1000ms]"
+						data-taos-offset="100"
+					>
+						<div class="card group">
+							<a
+								href="https://drive.google.com/drive/folders/1RR6okKeVsisyuh55c7cmIVH6C-k1H3zR?usp=drive_link"
+								target="_blank"
 							>
-								<img
-									src="img/ig-stories.jpg"
-									alt=""
-									class="project-img w-full"
-								/>
-							</div>
-							<div class="flex h-1/4 items-center justify-center">
-								<h2
-									class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+								<div
+									class="h-3/4 overflow-hidden transition-all duration-300 group-hover:brightness-75"
 								>
-									Instagram Stories
-								</h2>
-							</div>
-						</a>
+									<img
+										src="img/ig-stories.jpg"
+										alt=""
+										class="project-img w-full"
+									/>
+								</div>
+								<div class="flex h-1/4 items-center justify-center">
+									<h2
+										class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+									>
+										Instagram Stories
+									</h2>
+								</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -463,7 +516,10 @@
 		<!-- Clients Section Start Here -->
 		<section class="bg-slate-200" id="Clients">
 			<div class="container-padding container pb-14 pt-7">
-				<div class="mb-7 text-center xl:mb-10">
+				<div
+					class="taos:scale-[0.6] taos:opacity-0 mb-7 text-center delay-[300ms] duration-[1000ms] xl:mb-10"
+					data-taos-offset="100"
+				>
 					<h3
 						class="mb-1 text-lg font-bold uppercase tracking-wider text-lime-500 sm:text-xl xl:text-2xl"
 					>
@@ -475,7 +531,7 @@
 						Meet My Clients
 					</h1>
 					<p
-						class="mx-auto text-base font-medium text-slate-500 sm:text-lg xl:text-xl xl:leading-8"
+						class="mx-auto text-base font-medium text-slate-500 sm:text-lg xl:text-xl xl:leading-8 2xl:max-w-5xl"
 					>
 						Grateful for collaborations with diverse clients, turning visions
 						into reality. Each project represents a unique journey of creativity
@@ -485,39 +541,60 @@
 				<div
 					class="mx-auto flex flex-wrap justify-evenly gap-y-7 xl:justify-center xl:gap-x-10"
 				>
-					<a
-						href="https://www.instagram.com/farohis/"
-						class="clients"
-						target="_blank"
+					<div
+						class="taos:scale-[0.6] taos:opacity-0 delay-[300ms] duration-[1000ms]"
+						data-taos-offset="100"
 					>
-						<img src="img/faro.png" alt="" class="mx-auto block h-full" />
-					</a>
-					<a
-						href="https://www.instagram.com/ski_alkhawarizmi/"
-						class="clients"
-						target="_blank"
+						<a
+							href="https://www.instagram.com/farohis/"
+							class="clients"
+							target="_blank"
+						>
+							<img src="img/faro.png" alt="" class="mx-auto block h-full" />
+						</a>
+					</div>
+					<div
+						class="taos:scale-[0.6] taos:opacity-0 delay-300 duration-[1000ms] sm:delay-[400ms]"
+						data-taos-offset="100"
 					>
-						<img src="img/SKI.png" alt="" class="mx-auto block h-full" />
-					</a>
-					<a
-						href="https://www.instagram.com/kmt_ugm/"
-						class="clients"
-						target="_blank"
+						<a
+							href="https://www.instagram.com/ski_alkhawarizmi/"
+							class="clients"
+							target="_blank"
+						>
+							<img src="img/SKI.png" alt="" class="mx-auto block h-full" />
+						</a>
+					</div>
+					<div
+						class="taos:scale-[0.6] taos:opacity-0 delay-300 duration-[1000ms] sm:delay-[500ms]"
+						data-taos-offset="100"
 					>
-						<img src="img/kmt.png" alt="" class="mx-auto block h-full" />
-					</a>
-					<a
-						href="https://www.instagram.com/kmteti/"
-						class="clients"
-						target="_blank"
+						<a
+							href="https://www.instagram.com/kmt_ugm/"
+							class="clients"
+							target="_blank"
+						>
+							<img src="img/kmt.png" alt="" class="mx-auto block h-full" />
+						</a>
+					</div>
+					<div
+						class="taos:scale-[0.6] taos:opacity-0 delay-300 duration-[1000ms] sm:delay-[600ms]"
+						data-taos-offset="100"
 					>
-						<img src="img/KMTETI.png" alt="" class="mx-auto block h-full" />
-					</a>
+						<a
+							href="https://www.instagram.com/kmteti/"
+							class="clients"
+							target="_blank"
+						>
+							<img src="img/KMTETI.png" alt="" class="mx-auto block h-full" />
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>
 		<!-- Clients Section End Here -->
 
+		<script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
 		<script src="public/js/script.js"></script>
 	</body>
 </html>
