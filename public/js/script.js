@@ -29,6 +29,7 @@ function navbar() {
 	hamburger.classList.toggle("hamburger-active");
 	nav.classList.toggle("nav-active");
 	layer.classList.toggle("layer-active");
+	boxNav.classList.toggle("dark:bg-dark");
 	boxNav.classList.toggle("bg-background");
 }
 /* Navbar Animation Start Here */

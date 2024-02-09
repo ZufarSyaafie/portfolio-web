@@ -16,7 +16,9 @@
 		<title>My Portfolio Website</title>
 	</head>
 
-	<body class="bg-background selection:bg-sky-500 selection:text-slate-100">
+	<body
+		class="dark:bg-dark bg-background transition-all duration-500 ease-in-out selection:bg-sky-500 selection:text-slate-100"
+	>
 		<!-- Hero Section Start Here -->
 		<section class="overflow-x-hidden pt-24 xl:pt-28" id="Home">
 			<div class="container-padding container">
@@ -33,18 +35,18 @@
 							Hi Everyone 👋, I am
 						</h3>
 						<h1
-							class="text-4xl font-extrabold text-slate-900 sm:mb-1 sm:text-5xl md:mb-2 md:text-6xl xl:mb-3 xl:text-7xl"
+							class="text-4xl font-extrabold text-slate-900 dark:text-slate-50 sm:mb-1 sm:text-5xl md:mb-2 md:text-6xl xl:mb-3 xl:text-7xl"
 						>
 							Zufar Syaafi'
 						</h1>
 						<h2
-							class="mb-4 text-lg font-medium text-slate-600 sm:text-xl md:mb-5 md:text-2xl xl:mb-8 xl:text-3xl"
+							class="mb-4 text-lg font-medium text-slate-600 dark:text-slate-400 sm:text-xl md:mb-5 md:text-2xl xl:mb-8 xl:text-3xl"
 						>
 							Programming & Design
-							<span class="text-slate-400">Enthusiast</span>
+							<span class="text-slate-400 dark:text-slate-500">Enthusiast</span>
 						</h2>
 						<p
-							class="mb-5 text-base font-medium leading-7 text-slate-500 sm:text-lg sm:leading-8 md:mb-7 md:text-xl md:leading-9 xl:mb-9 xl:text-2xl xl:leading-9"
+							class="mb-5 text-base font-medium leading-7 text-slate-500 dark:text-slate-400 sm:text-lg sm:leading-8 md:mb-7 md:text-xl md:leading-9 xl:mb-9 xl:text-2xl xl:leading-9"
 						>
 							Design and programming are two inseparable things. Both complement
 							each other to create beautiful works.
@@ -55,7 +57,7 @@
 						>
 							<button
 								type="button"
-								class="rounded-full bg-lime-500 px-3 py-3 text-sm font-bold tracking-wider text-white transition-all hover:bg-lime-600 hover:shadow-lg sm:px-4 sm:text-base md:text-lg xl:px-6 xl:py-4 xl:text-xl"
+								class="rounded-full bg-lime-500 px-3 py-3 text-sm font-bold tracking-wider text-white transition-all hover:scale-105 hover:bg-lime-600 hover:shadow-lg dark:shadow-slate-900 sm:px-4 sm:text-base md:text-lg xl:px-6 xl:py-4 xl:text-xl"
 							>
 								Download CV
 							</button>
@@ -116,12 +118,12 @@
 							About Me
 						</h3>
 						<h1
-							class="mb-3 max-w-lg text-2xl font-extrabold text-slate-700 sm:max-md:text-3xl lg:text-3xl xl:mb-4 xl:text-4xl xl:leading-[2.75rem]"
+							class="mb-3 max-w-lg text-2xl font-extrabold text-slate-700 dark:text-slate-300/85 sm:max-md:text-3xl lg:text-3xl xl:mb-4 xl:text-4xl xl:leading-[2.75rem]"
 						>
 							Design & Programming are Very Interesting!
 						</h1>
 						<p
-							class="text-base font-medium text-slate-500 sm:max-md:text-lg lg:max-w-[45rem] lg:text-lg xl:text-xl xl:leading-8"
+							class="text-base font-medium text-slate-500 dark:text-slate-400 sm:max-md:text-lg lg:max-w-[45rem] lg:text-lg xl:text-xl xl:leading-8"
 						>
 							I am a young man studying informatics engineering at Gadjah Mada
 							University. I love things related to design and technology.
@@ -132,12 +134,12 @@
 						data-taos-offset="150"
 					>
 						<h2
-							class="mb-2 text-xl font-extrabold text-slate-700 sm:max-md:text-2xl md:mb-3 lg:text-2xl xl:mb-4 xl:text-3xl"
+							class="mb-2 text-xl font-extrabold text-slate-700 dark:text-slate-300/85 sm:max-md:text-2xl md:mb-3 lg:text-2xl xl:mb-4 xl:text-3xl"
 						>
 							Let's Connect!
 						</h2>
 						<p
-							class="mb-4 text-base font-medium text-slate-500 sm:max-md:text-lg lg:max-w-[26rem] lg:text-lg xl:text-xl xl:leading-8"
+							class="mb-4 text-base font-medium text-slate-500 dark:text-slate-400 sm:max-md:text-lg lg:max-w-[26rem] lg:text-lg xl:text-xl xl:leading-8"
 						>
 							Did you know that expanding our network has a lot of benefits? So,
 							let's connect!
@@ -248,7 +250,7 @@
 		<!-- Header Section Start Here -->
 		<section
 			id="header"
-			class="fixed left-0 right-0 top-0 z-10 translate-y-0 border-b border-solid border-slate-200 py-2 transition-all duration-300"
+			class="fixed left-0 right-0 top-0 z-10 translate-y-0 border-b border-solid border-slate-200 py-2 transition-all duration-300 dark:border-slate-700"
 		>
 			<div
 				id="box-nav"
@@ -258,11 +260,13 @@
 				class="container-padding container relative z-20 flex h-12 items-center justify-between"
 			>
 				<div>
-					<a href="" class="text-xl font-black tracking-wider text-slate-600"
+					<a
+						href=""
+						class="text-xl font-black tracking-wider text-slate-600 dark:text-slate-400"
 						>ZufarSyaafi</a
 					>
 				</div>
-				<div class="flex items-center gap-5">
+				<div class="flex items-center gap-5 lg:order-1">
 					<div
 						id="hamburger"
 						class="order-1 flex h-5 w-[26px] cursor-pointer flex-wrap content-between lg:hidden"
@@ -312,7 +316,7 @@
 					<!-- Dark Mode -->
 					<div
 						id="moon"
-						class="hidden scale-[0.6] cursor-pointer text-slate-600"
+						class="hidden scale-[0.6] cursor-pointer text-slate-400"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -329,7 +333,7 @@
 				</div>
 				<nav class="hidden w-1/2 py-4 transition-all duration-300 lg:block">
 					<ul
-						class="flex w-full items-center justify-between text-base font-medium text-slate-500"
+						class="flex w-full items-center justify-between text-base font-medium text-slate-500 dark:text-slate-400"
 					>
 						<li>
 							<a class="hover:text-lime-500" href="#Home">Home</a>
@@ -355,10 +359,10 @@
 			</div>
 			<nav
 				id="nav"
-				class="absolute left-0 right-0 top-full z-[1] -translate-y-96 rounded-b-xl bg-background py-4 opacity-0 shadow-lg transition-all duration-500 ease-in-out"
+				class="dark:bg-dark absolute left-0 right-0 top-full z-[1] -translate-y-96 rounded-b-xl bg-background py-4 opacity-0 shadow-lg transition-all duration-500 ease-in-out"
 			>
 				<ul
-					class="flex h-60 flex-col items-center justify-around text-lg font-medium text-slate-500"
+					class="flex h-60 flex-col items-center justify-around text-lg font-medium text-slate-500 dark:text-slate-400"
 				>
 					<li>
 						<a class="hover:text-lime-500" href="#Home">Home</a>
@@ -389,7 +393,7 @@
 		<!-- Header Section End Here -->
 
 		<!-- Portfolio Section Start Here -->
-		<section class="bg-slate-200" id="Portfolio">
+		<section class="bg-slate-200 dark:bg-slate-900" id="Portfolio">
 			<div class="container-padding container pb-7 pt-14">
 				<div
 					class="taos:scale-[0.6] taos:opacity-0 mb-7 text-center delay-[300ms] duration-[1000ms] xl:mb-10"
@@ -401,12 +405,12 @@
 						Portfolio
 					</h3>
 					<h1
-						class="mb-3 text-2xl font-extrabold tracking-wider text-slate-700 sm:text-3xl xl:mb-4 xl:text-4xl"
+						class="mb-3 text-2xl font-extrabold tracking-wider text-slate-700 dark:text-slate-300/85 sm:text-3xl xl:mb-4 xl:text-4xl"
 					>
 						My Latest Projects
 					</h1>
 					<p
-						class="mx-auto text-base font-medium text-slate-500 sm:text-lg xl:text-xl xl:leading-8 2xl:max-w-5xl"
+						class="mx-auto text-base font-medium text-slate-500 dark:text-slate-400 sm:text-lg xl:text-xl xl:leading-8 2xl:max-w-5xl"
 					>
 						Showcasing creativity in captivating designs and innovative
 						technological solutions. My portfolio reflects dedication to
@@ -424,7 +428,7 @@
 								target="_blank"
 							>
 								<div
-									class="h-3/4 overflow-hidden bg-slate-800 transition-all duration-300 group-hover:brightness-75"
+									class="h-3/4 overflow-hidden bg-slate-700 transition-all duration-300 group-hover:brightness-75"
 								>
 									<img
 										src="img/event-muslim-teknik.png"
@@ -434,7 +438,7 @@
 								</div>
 								<div class="flex h-1/4 items-center justify-center">
 									<h2
-										class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+										class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background dark:text-slate-300/85 dark:text-slate-300/85 dark:group-hover:text-slate-700 dark:group-hover:text-slate-700"
 									>
 										PERNIK 1445 H
 									</h2>
@@ -449,7 +453,7 @@
 						<div class="card group">
 							<a href="https://www.instagram.com/kpu.kmteti/" target="_blank">
 								<div
-									class="flex h-3/4 overflow-hidden bg-slate-800 transition-all duration-300 group-hover:brightness-75"
+									class="flex h-3/4 overflow-hidden bg-slate-700 transition-all duration-300 group-hover:brightness-75"
 								>
 									<img
 										src="img/kpu-kmteti.svg"
@@ -459,7 +463,7 @@
 								</div>
 								<div class="flex h-1/4 items-center justify-center">
 									<h2
-										class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+										class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background dark:text-slate-300/85 dark:group-hover:text-slate-700"
 									>
 										KPU - KMTETI
 									</h2>
@@ -480,7 +484,7 @@
 								</div>
 								<div class="flex h-1/4 items-center justify-center">
 									<h2
-										class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+										class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background dark:text-slate-300/85 dark:group-hover:text-slate-700"
 									>
 										Navigation Bar
 									</h2>
@@ -498,13 +502,13 @@
 								target="_blank"
 							>
 								<div
-									class="h-3/4 overflow-hidden bg-slate-700 transition-all duration-300 group-hover:brightness-75"
+									class="h-3/4 overflow-hidden transition-all duration-300 group-hover:brightness-75"
 								>
 									<img src="img/ku-4.png" alt="" class="project-img w-full" />
 								</div>
 								<div class="flex h-1/4 items-center justify-center">
 									<h2
-										class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+										class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background dark:text-slate-300/85 dark:group-hover:text-slate-700"
 									>
 										Event Posters
 									</h2>
@@ -532,7 +536,7 @@
 								</div>
 								<div class="flex h-1/4 items-center justify-center">
 									<h2
-										class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+										class="text-center text-xl font-bold transition-all duration-300 group-hover:text-background dark:text-slate-300/85 dark:group-hover:text-slate-700"
 									>
 										Instagram Feeds
 									</h2>
@@ -560,7 +564,7 @@
 								</div>
 								<div class="flex h-1/4 items-center justify-center">
 									<h2
-										class="text-center text-xl font-bold text-slate-700 transition-all duration-300 group-hover:text-background"
+										class="text-center text-xl font-bold transition-all duration-300 group-hover:text-background dark:text-slate-300/85 dark:group-hover:text-slate-700"
 									>
 										Instagram Stories
 									</h2>
@@ -574,7 +578,7 @@
 		<!-- Portfolio Section End Here -->
 
 		<!-- Clients Section Start Here -->
-		<section class="bg-slate-200" id="Clients">
+		<section class="bg-slate-200 dark:bg-slate-900" id="Clients">
 			<div class="container-padding container pb-14 pt-7">
 				<div
 					class="taos:scale-[0.6] taos:opacity-0 mb-7 text-center delay-[300ms] duration-[1000ms] xl:mb-10"
@@ -586,12 +590,12 @@
 						Clients
 					</h3>
 					<h1
-						class="mb-3 text-2xl font-extrabold tracking-wider text-slate-700 sm:text-3xl xl:mb-4 xl:text-4xl"
+						class="mb-3 text-2xl font-extrabold tracking-wider text-slate-700 dark:text-slate-300/85 sm:text-3xl xl:mb-4 xl:text-4xl"
 					>
 						Meet My Clients
 					</h1>
 					<p
-						class="mx-auto text-base font-medium text-slate-500 sm:text-lg xl:text-xl xl:leading-8 2xl:max-w-5xl"
+						class="mx-auto text-base font-medium text-slate-500 dark:text-slate-400 sm:text-lg xl:text-xl xl:leading-8 2xl:max-w-5xl"
 					>
 						Grateful for collaborations with diverse clients, turning visions
 						into reality. Each project represents a unique journey of creativity
